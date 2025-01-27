@@ -1,0 +1,95 @@
+plugins:
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    zxs:uftk39: {}
+  group:server:
+    server:mhn6m3:
+      port: 5140
+      maxPort: 5149
+    ~server-satori:bl1n6g: {}
+    ~server-temp:ndo86j: {}
+    adapter-qq:e0blmp:
+      secret: tfRDzmZM9wjWK8wkYNC1qfUJ9zpfVLC3
+      id: '102075770'
+      token: UmGUf8eLH42vPG5MP4tkb8NDUwgbwfHf
+      type: public
+      sandbox: true
+      intents:
+        - GUILDS
+        - GUILD_MEMBERS
+        - GUILD_MESSAGE_REACTIONS
+        - DIRECT_MESSAGES
+        - OPEN_FORUMS_EVENT
+        - AUDIO_OR_LIVE_CHANNEL_MEMBER
+        - USER_MESSAGE
+        - INTERACTIONS
+        - MESSAGE_AUDIT
+        - AUDIO_ACTION
+        - PUBLIC_GUILD_MESSAGES
+      authType: bot
+  group:basic:
+    admin:q758vt: {}
+    ~bind:q9yfv1: {}
+    commands:lqln9r: {}
+    help:vjam1j: {}
+    http:bdfq49: {}
+    ~inspect:ixz6ia: {}
+    locales:p28mb2: {}
+    proxy-agent:32orf6: {}
+    rate-limit:2sespp: {}
+    telemetry:4wln66: {}
+  group:console:
+    actions:63ptsc: {}
+    analytics:gy2pup: {}
+    android:p4jos0:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    ~auth:hyhkbx:
+      admin:
+        username: zxs
+        password: hqy114514
+    config:nbr265: {}
+    console:nnnt6q:
+      open: true
+    dataview:sdt0k0: {}
+    desktop:etdm26:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:ld1ms1: {}
+    logger:70pyrs: {}
+    insight:pnj7d8: {}
+    market:zg5uhz:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:osa9vh: {}
+    oobe:uqt5z2: {}
+    sandbox:a4py5e: {}
+    status:7yraam: {}
+    theme-vanilla:gt12e7: {}
+  group:storage:
+    ~database-mongo:yqg25m:
+      database: koishi
+    ~database-mysql:t3fd44:
+      database: koishi
+    ~database-postgres:z0spw7:
+      database: koishi
+    database-sqlite:65tign:
+      path: data/koishi.db
+    assets-local:4xua57: {}
+  group:adapter:
+    ~adapter-dingtalk:lzj6is: {}
+    ~adapter-discord:qfqhs6: {}
+    ~adapter-kook:j0332m: {}
+    ~adapter-lark:euestw: {}
+    ~adapter-line:d6t0ks: {}
+    ~adapter-mail:31k5kn: {}
+    ~adapter-matrix:a77ird: {}
+    ~adapter-satori:mvehaq: {}
+    ~adapter-slack:zsz0z7: {}
+    ~adapter-telegram:73geaj: {}
+    ~adapter-wechat-official:b4p07j: {}
+    ~adapter-wecom:cklrta: {}
+    ~adapter-whatsapp:2fs0po: {}
+    ~adapter-zulip:tm15ki: {}
+prefix:
+  - /
+delay:
+  character: 1000
